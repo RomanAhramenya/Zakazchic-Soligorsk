@@ -7,7 +7,7 @@ export default function Layout({ children, tittle }) {
   return (
     <>
       <Head>
-        <title>ЖКХ Солигорск </title>
+        <title>  КУП Служба заказчика ЖКУ </title>
         <link
           href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
           rel="stylesheet"
@@ -15,14 +15,13 @@ export default function Layout({ children, tittle }) {
         <meta name="description" content="ЖКХ" />
         <link rel="shortcut icon" href={iconRB.src} type="image/png" />
       </Head>
-      <div className="">
-        <header className="m-10" >
+      <div className=" bg-lime-100">
+        <header className="p-10 " >
         <div className="md:flex justify-center items-center">
         <div className="md:shrink-0 "><Image  width='100' height={100} className="h-48 w-full object-cover md:h-full md:w-48" src={logo.src} alt={'logo'} /></div>
              
-        <h1 className="text-center text-4xl">
-            Солигорский государственный заказчик в сфере жилищно-коммунального
-          хозяйства
+        <h1 className="text-center text-4xl text-slate-600 font-bold ">
+            КУП Служба заказчика ЖКУ
         </h1> 
         </div>
        
