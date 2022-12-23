@@ -8,13 +8,13 @@ export default function HomeRenovation() {
         <h1 className="text-center text-2xl text-indigo-500 font-bold">Годовой план текущего ремонта жилфонда на 2022 год</h1>
         <p className="text-center">
           <a className=" text-slate-500 hover:text-slate-800 delay-50" href="/files/plan.pdf" target="_blank" rel="noreferrer">
-            Просмотр Годовой план текущего ремонта жилфонда на 2022 год в
+            Просмотр "Годовой план текущего ремонта жилфонда на 2022 год" в
             фомате PDF
           </a>
         </p>
         <p className="text-center">
           <a className=" text-slate-500 hover:text-slate-800 delay-100 ease-in-out" href="/files/planDonload.xls" download rel="noreferrer">
-            Скачать Годовой план текущего ремонта жилфонда на 2022 год в
+            Скачать "Годовой план текущего ремонта жилфонда на 2022 год" в
             фомате MS Exel{" "}
           </a>
         </p>
