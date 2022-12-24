@@ -56,8 +56,8 @@ export default function Layout({ children, tittle }) {
                 href="/files/svidetelstvo.pdf"
                 download
                 rel="noreferrer"
-              > Скачать "Свидетельство о государственной регистрации юридического
-              лица"</a>
+              > Скачать &quot;Свидетельство о государственной регистрации юридического
+              лица&quot;</a>
              
             </div>
             <div>
@@ -67,7 +67,7 @@ export default function Layout({ children, tittle }) {
                 href="/files/attestat54.pdf"
                 download
                 rel="noreferrer"
-              > Скачать "Аттестат соответствия №0000054-ФЗ"</a>
+              > Скачать &quot;Аттестат соответствия №0000054-ФЗ&quot;</a>
              
             </div>
             <div>
@@ -77,7 +77,7 @@ export default function Layout({ children, tittle }) {
                 href="/files/attestat2800.pdf"
                 download
                 rel="noreferrer"
-              > Скачать "Аттестат соответствия №0002800-ИН"</a>
+              > Скачать &quot;Аттестат соответствия №0002800-ИН&quot;</a>
              
             </div>
           </div>

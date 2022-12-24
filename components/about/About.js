@@ -155,6 +155,7 @@ export default function About() {
                 className="text-red-800 hover:text-slate-800"
                 href="https://pravo.by/document/?guid=3871&p0=H11100300"
                 target="_blank"
+                rel="noreferrer"
               >
                 Закона Республики Беларусь от 18 июля 2011 года «Об обращениях
                 граждан и юридических лиц»
@@ -172,6 +173,7 @@ export default function About() {
                 className="text-red-800 hover:text-slate-800"
                 href="https://pravo.by/document/?guid=3871&p0=H11100300"
                 target="_blank"
+                rel="noreferrer"
               >
                 Законом Республики Беларусь от 18 июля 2011 года «Об обращениях
                 граждан и юридических лиц»
@@ -181,6 +183,7 @@ export default function About() {
                 className="text-red-800 hover:text-slate-800"
                 href="https://pravo.by/document/?guid=3871&p0=H11100300"
                 target="_blank"
+                rel="noreferrer"
               >
                 требований, предъявляемых к электронным обращениям.
               </a>
@@ -217,6 +220,7 @@ export default function About() {
                 className="text-red-800 hover:text-slate-800"
                 href="https://region.grodno.by/ru/treb-ru"
                 target="_blank"
+                rel="noreferrer"
               >
                 требованиям
               </a>{" "}
