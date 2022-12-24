@@ -47,9 +47,9 @@ export default function Layout({ children, tittle }) {
 
         <main className="">{children}</main>
         <footer className="flex  justify-around items-center border-y-2 mt-10 py-10  text-slate-600">
-          <div>24 37 71 – приемная</div>
-          <div>
-            <div>
+          <div className="hidden md:block">24 37 71 – приемная</div>
+          <div className="text-center">
+            <div className="my-2">
               {" "}
               <a
                 className=" text-slate-500 hover:text-slate-800 delay-100 ease-in-out"
@@ -60,7 +60,7 @@ export default function Layout({ children, tittle }) {
               лица&quot;</a>
              
             </div>
-            <div>
+            <div className="my-2" >
               {" "}
               <a
                 className=" text-slate-500 hover:text-slate-800 delay-100 ease-in-out"
@@ -70,7 +70,7 @@ export default function Layout({ children, tittle }) {
               > Скачать &quot;Аттестат соответствия №0000054-ФЗ&quot;</a>
              
             </div>
-            <div>
+            <div className="my-2">
               {" "}
               <a
                 className=" text-slate-500 hover:text-slate-800 delay-100 ease-in-out"
