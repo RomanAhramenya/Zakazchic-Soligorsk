@@ -22,7 +22,7 @@ export default function About() {
               направить письменное обращение по адресу: 223710, Минская область,
 г.Солигорск, ул.Константина Заслонова, д.2, ком 125А.
             </li>
-            <li>с помощью интернет-ресурса <a  className=" text-slate-500 hover:text-slate-800 delay-100 ease-in-out" href="https://xn--80abnmycp7evc.xn--90ais/" target={"_blank"}>обращения.бел</a></li>
+            <li>с помощью интернет-ресурса <a  className=" text-slate-500 hover:text-slate-800 delay-100 ease-in-out" href="https://xn--80abnmycp7evc.xn--90ais/" target={"_blank"} rel="noreferrer">обращения.бел</a></li>
           </ul>
           <h3 className=" text-xl font-bold my-4">Наши телефоны:</h3>
           <ul className="list-disc list-inside">
@@ -50,9 +50,9 @@ export default function About() {
         </div>
         <div className="p-4 ">
           <h1 className=" text-xl font-bold my-4 ">Об обращениях граждан и юридических лиц</h1>
-          <p className="text-rose-700  text-xl text-justify italic">Уважаемые посетители! Обращаем внимание на то, что 2 января 2023 г. вступают в силу изменения, внесенные в статью 25 Закона Республики Беларусь "Об обращениях граждан и юридических лиц".
+          <p className="text-rose-700  text-xl text-justify italic">Уважаемые посетители! Обращаем внимание на то, что 2 января 2023 г. вступают в силу изменения, внесенные в статью 25 Закона Республики Беларусь &quot;Об обращениях граждан и юридических лиц&quot;.
           В связи с этим подача электронных обращений будет возможна только с помощью государственной единой (интегрированной) республиканской информационной системы учета и обработки обращений 
-          граждан и юридических лиц - интернет-ресурса <a className=" text-slate-500 hover:text-slate-800 delay-100 ease-in-out" href="https://xn--80abnmycp7evc.xn--90ais/" target={"_blank"}>обращения.бел</a></p>
+          граждан и юридических лиц - интернет-ресурса <a className=" text-slate-500 hover:text-slate-800 delay-100 ease-in-out" href="https://xn--80abnmycp7evc.xn--90ais/" target={"_blank"} rel="noreferrer">обращения.бел</a></p>
         </div>
       </div>
     </Layout>
