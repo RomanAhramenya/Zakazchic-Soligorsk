@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import iconRB from "../../assets/image/rbicon.png";
-import logo from "../../assets/image/logo.png";
+import logo from "../../assets/image/image-002.png";
 import Button from "./Button";
 export default function Layout({ children, tittle }) {
   return (
@@ -15,21 +15,23 @@ export default function Layout({ children, tittle }) {
         <meta name="description" content="ЖКХ" />
         <link rel="shortcut icon" href={iconRB.src} type="image/png" />
       </Head>
-      <div className=" bg-lime-100">
+      <div>
         <header className="p-10 ">
           <div className="md:flex justify-center items-center">
             <div className="md:shrink-0 ">
               <Image
-                width="100"
-                height={100}
-                className="h-48 w-full object-cover md:h-full md:w-48"
+                width="300"
+                height={300}
+                className="h-80  object-cover md:h-full md:w-80"
                 src={logo.src}
                 alt={"logo"}
               />
             </div>
 
             <h1 className="text-center text-4xl text-slate-600 font-bold ">
-              КУП Служба заказчика ЖКУ
+            <div>СЛУЖБА ЗАКАЗЧИКА</div> 
+            <div>ЖИЛИЩНО-КОММУНАЛЬНЫХ УСЛУГ</div>
+            <div>СОЛИГОРСКОГО РАЙОНА</div>
             </h1>
           </div>
 
@@ -47,7 +49,7 @@ export default function Layout({ children, tittle }) {
 
         <main className="">{children}</main>
         <footer className="flex  justify-around items-center border-y-2 mt-10 py-10  text-slate-600">
-          <div className="hidden md:block">24 37 71 – приемная</div>
+          <div className="hidden md:block">+375174 24 37 71 – приемная</div>
           <div className="text-center">
             <div className="my-2">
               {" "}
