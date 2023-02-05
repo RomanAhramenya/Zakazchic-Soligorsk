@@ -1,8 +1,8 @@
 
-import Post from "../components/main/Post";
-import img1 from "../assets/image/post1.jpg";
-import img2 from "../assets/image/post2.jpg";
-import img3 from "../assets/image/post3.jpg";
+import Post from '../components/main/Post.js';
+import img1 from '../assets/image/post1.jpg';
+import img2 from '../assets/image/post2.jpg';
+import img3 from '../assets/image/post3.jpg';
 
 export default function Page() {
   return (

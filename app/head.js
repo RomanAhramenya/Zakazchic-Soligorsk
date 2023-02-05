@@ -1,4 +1,4 @@
-import iconRB from "../assets/image/rbicon.png";
+import iconRB from '../assets/image/rbicon.png';
 export default function Head() {
   return (
     <>
