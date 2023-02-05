@@ -9,7 +9,7 @@ export default function CapRemont() {
     return sum;
   }
   return (
-    <Layout>
+   
       <div className="flex flex-col  items-center justify-center p-2">
         <h1 className="text-center text-2xl text-indigo-500 font-bold md:w-2/3">
           Перечень многоквартирных жилых домов Солигорского райиона, подлежащих
@@ -23,6 +23,6 @@ export default function CapRemont() {
           </a>
         </p>
       </div>
-    </Layout>
+    
   );
 }

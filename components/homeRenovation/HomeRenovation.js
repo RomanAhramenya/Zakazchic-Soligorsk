@@ -2,7 +2,7 @@ import Layout from "../layout/Layout";
 
 export default function HomeRenovation() {
   return (
-    <Layout>
+   
       <div className="flex flex-col  items-center justify-center p-2">
         {" "}
         <h1 className="text-center text-2xl text-indigo-500 font-bold">Годовой план текущего ремонта жилфонда на 2022 год</h1>
@@ -19,6 +19,6 @@ export default function HomeRenovation() {
           </a>
         </p>
       </div>
-    </Layout>
+   
   );
 }

@@ -1,7 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+   font-family: "SegoeUiBlack";
+   src: url('../assets/fonts/SegoeUiBlack.ttf');
+   font-weight: normal;
+   font-style: normal;
+ }
+ @font-face {
+   font-family: "SegoeUI";
+   src: url('../assets/fonts/SegoeUI.ttf');
+   font-weight: bold;
+   font-style: bold;
+ }
 .active{
-   text-decoration: underline;
-   color: black;
+  background-color: rgba(56,189,248,.1);
+  color:rgb(56 189 248);
+  border-radius: 9999px;
 }

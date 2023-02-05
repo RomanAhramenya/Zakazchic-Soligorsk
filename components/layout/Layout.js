@@ -1,55 +1,67 @@
+'use client'
+
 import Head from "next/head";
+import s from './layout.module.css'
+import nav from "../../assets/image/nav.webp";
+import logo from "../../assets/image/image-002.webp";
+import Button from "../layout/Button";
 import Image from "next/image";
-import iconRB from "../../assets/image/rbicon.png";
-import logo from "../../assets/image/image-002.png";
-import Button from "./Button";
+import { Suspense, useEffect, useState } from "react";
+import LoadingScreen from "../loadingScreen/LoadingScreen";
 export default function Layout({ children, tittle }) {
+  const [render,setRender] = useState(1)
+  useEffect(()=>{
+    setRender(render+1)
+  },[])
+  console.log('layout=',render)
   return (
     <>
-      <Head>
-        <title> КУП Служба заказчика ЖКУ </title>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
-          rel="stylesheet"
-        />
-        <meta name="description" content="ЖКХ" />
-        <link rel="shortcut icon" href={iconRB.src} type="image/png" />
-      </Head>
+    
       <div>
-        <header className="p-10 ">
-          <div className="md:flex justify-center items-center">
-            <div className="md:shrink-0 ">
-              <Image
-                width="300"
-                height={300}
-                className="h-80  object-cover md:h-full md:w-80"
-                src={logo.src}
-                alt={"logo"}
-              />
-            </div>
-
-            <h1 className="text-center text-4xl text-slate-600 font-bold ">
-            <div>СЛУЖБА ЗАКАЗЧИКА</div> 
-            <div>ЖИЛИЩНО-КОММУНАЛЬНЫХ УСЛУГ</div>
-            <div>СОЛИГОРСКОГО РАЙОНА</div>
-            </h1>
+      
+      <header className=" ">
+             <nav className={`flex flex-wrap justify-center ${s.container}`}>
+             <Image priority src={nav} className="h-80  object-cover md:h-1/3 md:w-1/3"/>
+          <Button href="/" name="Главная" />
+          <Button href="/page2" name="COVID-19" />
+          <Button href="/page3" name="АКТУАЛЬНАЯ ИНФОРМАЦИЯ" />
+          <Button href="/page8" name="О НАС" />
+        </nav>
+        <div className="md:flex justify-center items-center">
+          <div className="mx-10 md:shrink-0 ">
+            <Image 
+                priority
+              width="300"
+              height='300'
+              className="h-80  object-cover md:h-full md:w-80"
+              src={logo}
+              alt={"logo"}
+            />
           </div>
 
-          <nav className="flex flex-wrap justify-center border-y-2 my-10 ">
-            <Button href="/" name="Главная" />
-            <Button href="/page2" name="COVID-19" />
-            <Button href="/page3" name="АКТУАЛЬНАЯ ИНФОРМАЦИЯ" />
-            <Button href="/page4" name="РЕМОНТ ЖИЛФОНДА" />
-            <Button href="/page5" name="КАПИТАЛЬНЫЙ РЕМОНТ" />
-            <Button href="/page6" name="УПРАВЛЕНИЕ ОБЩИМ ИМУЩЕСТВОМ" />
-            <Button href="/page7" name="ОБРАЩЕНИЯ" />
-            <Button href="/page8" name="О нас" />
-          </nav>
-        </header>
+          <h1 className=" px-2 text-2xl  md:text-4xl" style={{'fontFamily':'SegoeUiBlack,sans-serif',}}>
+          <div>СЛУЖБА ЗАКАЗЧИКА</div> 
+          <div>ЖИЛИЩНО-КОММУНАЛЬНЫХ УСЛУГ</div>
+          <div>СОЛИГОРСКОГО РАЙОНА</div>
+          </h1>
+        </div>
+      </header>
 
-        <main className="">{children}</main>
-        <footer className="flex  justify-around items-center border-y-2 mt-10 py-10  text-slate-600">
-          <div className="hidden md:block">+375174 24 37 71 – приемная</div>
+        <main >
+      <Suspense fallback={<LoadingScreen/>}>
+        {children}
+      </Suspense>
+        </main>
+    
+        <footer className=" border-y-2 mt-10 py-10  ">
+        <nav className="flex flex-wrap justify-center  my-10 ">
+            <Button href="/page4" name="РЕМОНТ ЖИЛФОНДА" />
+          <Button href="/page5" name="КАПИТАЛЬНЫЙ РЕМОНТ" />
+          <Button href="/page6" name="УПРАВЛЕНИЕ ОБЩИМ ИМУЩЕСТВОМ" />
+          <Button href="/page7" name="ОБРАЩЕНИЯ" />
+            </nav>
+            <div className="flex  justify-around items-center text-slate-600">
+                 <div className="hidden md:block">+375174 24 37 71 – приемная</div>
           <div className="text-center">
             <div className="my-2">
               {" "}
@@ -83,6 +95,8 @@ export default function Layout({ children, tittle }) {
              
             </div>
           </div>
+            </div>
+       
         </footer>
       </div>
     </>

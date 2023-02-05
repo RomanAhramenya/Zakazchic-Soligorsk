@@ -1,8 +1,8 @@
-import Layout from "../layout/Layout";
+
 
 export default function AboutUs() {
   return (
-    <Layout>
+   
       <div className="flex flex-col  items-center justify-center">
         <div className="w-3/4">
           <h1 className="text-center text-2xl  text-indigo-500 font-bold mb-4">
@@ -294,6 +294,6 @@ export default function AboutUs() {
           </p>
         </div>
       </div>
-    </Layout>
+    
   );
 }

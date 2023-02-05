@@ -1,11 +1,9 @@
 
-import Layout from "../layout/Layout";
 
-import Form from "./Form";
 export default function About() {
 
   return (
-    <Layout>
+  
       <div className=" p-2">
         <div className="p-4">
           <h1 className="text-center text-2xl text-indigo-500 font-bold pb-4 ">
@@ -55,6 +53,6 @@ export default function About() {
           граждан и юридических лиц - интернет-ресурса <a className=" text-slate-500 hover:text-slate-800 delay-100 ease-in-out" href="https://xn--80abnmycp7evc.xn--90ais/" target={"_blank"} rel="noreferrer">обращения.бел</a></p>
         </div>
       </div>
-    </Layout>
+   
   );
 }

@@ -2,7 +2,7 @@ import Layout from "../layout/Layout";
 
 export default function ActualInformation() {
   return (
-    <Layout>
+  
       <div className="flex flex-col  items-center justify-center">
         <div className="w-3/4">
           <h1 className="text-center text-2xl text-rose-600 font-bold">
@@ -193,6 +193,6 @@ export default function ActualInformation() {
           <p className="text-2xl text-rose-600 font-bold">Соблюдение мер пожарной безопасности – это залог вашего благополучия, сохранности вашей жизни и жизни ваших близких! Пожар легче предупредить, чем потушить!</p>
         </div>
       </div>
-    </Layout>
+    
   );
 }

@@ -1,14 +1,12 @@
-import Head from "next/head";
-import Image from "next/image";
-import Layout from "../components/layout/Layout";
+
 import Post from "../components/main/Post";
 import img1 from "../assets/image/post1.jpg";
 import img2 from "../assets/image/post2.jpg";
 import img3 from "../assets/image/post3.jpg";
 
-export default function Home() {
+export default function Page() {
   return (
-    <Layout>
+    
       <div>
         <Post
           h1="Важно!"
@@ -30,6 +28,6 @@ export default function Home() {
         />
      
       </div>
-    </Layout>
+    
   );
 }
