@@ -16,7 +16,7 @@ export default function CapRemont() {
         </p>
         <p className="text-center ">
           <a className={`text-slate-500 ${s.button}`} href="/files/prespectiveProgramma.pdf" download rel="noreferrer">
-            Скачать &quot;Перспективная программа 2021 - 2025&quot; в
+            Скачать &quot;Перспективная программа 2021-2025&quot; в
             фомате PDF{" "}
           </a>
         </p>
