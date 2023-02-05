@@ -1,11 +1,19 @@
-import Layout from "../layout/Layout";
-
+import Image from 'next/image';
+import imageGerb from './../../assets/image/gerb.png'
+import s from '../homeRenovation/css.module.css'
 export default function Management() {
   return (
     
-    <div className="flex flex-col  items-center justify-center">
+    <div className="flex flex-col text-white  items-center justify-center">
     <div className="w-3/4">
-         <h1 className="text-center text-2xl text-slate-600 font-bold">Уважаемые жители Солигорска и Солигорского района</h1>
+    <div className='flex flex-col justify-center items-center'>
+       <div className='flex justify-center'>
+            <Image src={imageGerb} alt={'gerb'} className='h-3/4 w-1/3'/>
+          </div>
+         <h1 className="text-center text-2xl font-bold">Уважаемые жители Солигорска и Солигорского района</h1>
+    </div>
+   
+
       <p className="py-4">
         С 01.06.2021 года плательщики жилищно-коммунальных услуг ежемесячно
         будут вносить плату за «услугу по управлению общим имуществом
@@ -47,7 +55,7 @@ export default function Management() {
         Для заключения типового договора участники совместных домовладений могут
         самостоятельно обращаться в КУП «Служба заказчика ЖКУ» по адресу г.Солигорск, ул.Константина Заслонова, д.2, ком 125А, тел. +375174 24-37-71.
       </p>
-      <p className="text-center text-2xl text-slate-600 font-bold py-4 ">Перечень документов, предоставляемых для заключения договора:</p>
+      <p className="text-center text-2xl  font-bold py-4 ">Перечень документов, предоставляемых для заключения договора:</p>
       <ul className="list-inside">
         <li className="list-disc italic text-lg">паспорт или иной документ, удостоверяющий личность;</li>
         <li className="list-disc italic text-lg">
@@ -59,10 +67,10 @@ export default function Management() {
           действует доверенное лицо.
         </li>
       </ul>
-      <h1 className="text-center text-2xl text-slate-600 font-bold py-4 ">Приложение (ссылки для скачивания):</h1>
-      <p className="py-2"><a href="/files/p1.pdf" rel="noreferrer" className=" text-slate-500 hover:text-slate-800 delay-100 ease-in-out" target='_blank' >Общая информация об услуге по управлению общим имуществом</a></p>
-      <p className="py-2"><a href="/files/p2.pdf" rel="noreferrer" className=" text-slate-500 hover:text-slate-800 delay-100 ease-in-out" target='_blank' >Форма типового договора</a></p>
-      <p className="py-2">  <a href="https://pravo.by/document/?guid=3871&p0=C21400571" rel="noreferrer" target='_blank' className=" text-slate-500 hover:text-slate-800 delay-100 ease-in-out">
+      <h1 className="text-center text-2xl py-4 ">Приложение (ссылки для скачивания):</h1>
+      <p className="py-2"><a href="/files/p1.pdf" rel="noreferrer" className={`${s.button}`} target='_blank' >Общая информация об услуге по управлению общим имуществом</a></p>
+      <p className="py-2"><a href="/files/p2.pdf" rel="noreferrer" className={`${s.button}`} target='_blank' >Форма типового договора</a></p>
+      <p className={` ${s.button}`}>  <a href="https://pravo.by/document/?guid=3871&p0=C21400571" rel="noreferrer" target='_blank' >
         Положение о порядке расчетов и внесения платы за ЖКУ и платы за
         пользование жилыми помещениями государственного жилищного фонда, а также
         возмещения расходов на электроэнергию, утвержденное постановлением

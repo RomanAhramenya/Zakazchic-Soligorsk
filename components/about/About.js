@@ -1,14 +1,21 @@
 
-
+import Image from 'next/image';
+import imageGerb from './../../assets/image/gerb.png'
 export default function About() {
 
   return (
   
-      <div className=" p-2">
+      <div className=" p-2 text-white">
         <div className="p-4">
-          <h1 className="text-center text-2xl text-indigo-500 font-bold pb-4 ">
+        <div className='flex flex-col justify-center items-center'>
+        <div className='flex justify-center'>
+            <Image src={imageGerb} alt={'gerb'} className='h-3/4 w-1/3'/>
+          </div>
+          <h1 className="text-center text-2xl  font-bold pb-4 ">
             Уважаемый посетитель сайта!
           </h1>
+        </div>
+          
           <p>
             Обратиться в коммунальное унитарное предприятие «Служба заказчика
             жилищно-коммунальных услуг Солигорского района». можно следующими
@@ -50,7 +57,7 @@ export default function About() {
           <h1 className=" text-xl font-bold my-4 ">Об обращениях граждан и юридических лиц</h1>
           <p className="text-rose-700  text-xl text-justify italic">Уважаемые посетители! Обращаем внимание на то, что 2 января 2023 г. вступают в силу изменения, внесенные в статью 25 Закона Республики Беларусь &quot;Об обращениях граждан и юридических лиц&quot;.
           В связи с этим подача электронных обращений будет возможна только с помощью государственной единой (интегрированной) республиканской информационной системы учета и обработки обращений 
-          граждан и юридических лиц - интернет-ресурса <a className=" text-slate-500 hover:text-slate-800 delay-100 ease-in-out" href="https://xn--80abnmycp7evc.xn--90ais/" target={"_blank"} rel="noreferrer">обращения.бел</a></p>
+          граждан и юридических лиц - интернет-ресурса <a className=" text-white hover:text-slate-800 delay-100 ease-in-out" href="https://xn--80abnmycp7evc.xn--90ais/" target={"_blank"} rel="noreferrer">обращения.бел</a></p>
         </div>
       </div>
    

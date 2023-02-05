@@ -1,25 +1,23 @@
-import Layout from "../layout/Layout";
-import { plan } from "./../../assets/planTable/plan.js";
+import s from '../homeRenovation/css.module.css'
 export default function CapRemont() {
-  function summ(name) {
-    let sum = 0;
-    plan[name].map((e) => {
-      sum += e.P;
-    });
-    return sum;
-  }
+
   return (
    
       <div className="flex flex-col  items-center justify-center p-2">
-        <h1 className="text-center text-2xl text-indigo-500 font-bold md:w-2/3">
-          Перечень многоквартирных жилых домов Солигорского райиона, подлежащих
-          капитальному ремонту в 2022 году
+        <h1 style={{'color':'rgb(56 189 248)'}}  className="text-center text-2xl text-indigo-500 font-bold md:w-2/3">
+          Объекты капитального ремонта г.Солигорска и Солигорского района 2023 года
         </h1>
  
-        <p className="text-center">
-          <a className=" text-slate-500 hover:text-slate-800 delay-100 ease-in-out" href="/files/planDonload.xls" download rel="noreferrer">
-            Скачать &quot;Годовой план текущего ремонта жилфонда на 2022 год&quot; в
+        <p className="text-center my-4">
+          <a className={`text-slate-500 ${s.button}`} href="/files/capremontSmi.xlsx" download rel="noreferrer">
+            Скачать &quot;Объекты капитального ремонта для СМИ&quot; в
             фомате MS Exel{" "}
+          </a>
+        </p>
+        <p className="text-center ">
+          <a className={`text-slate-500 ${s.button}`} href="/files/prespectiveProgramma.pdf" download rel="noreferrer">
+            Скачать &quot;Перспективная программа 2021 - 2025&quot; в
+            фомате PDF{" "}
           </a>
         </p>
       </div>

@@ -1,13 +1,19 @@
-
-
+import Image from 'next/image';
+import imageGerb from './../../assets/image/gerb.png'
 export default function AboutUs() {
   return (
    
-      <div className="flex flex-col  items-center justify-center">
+      <div className="flex flex-col text-white items-center justify-center">
         <div className="w-3/4">
-          <h1 className="text-center text-2xl  text-indigo-500 font-bold mb-4">
+        <div className='flex flex-col justify-center items-center'>
+          <h1 style={{'color':'rgb(56 189 248)'}} className="text-center text-2xl   font-bold mb-4">
             О НАС
           </h1>
+          <div className='flex justify-center'>
+            <Image src={imageGerb} alt={'gerb'} className='h-3/4 w-1/3'/>
+          </div>
+        </div>
+          
           <p className="my-4">
             Коммунальное унитарное предприятие «Служба заказчика жилищно-
             коммунальных услуг Солигорского района» (далее Предприятие), создано
@@ -19,6 +25,7 @@ export default function AboutUs() {
             унитарного предприятия «Служба заказчика жилищно-коммунальных услуг
             Солигорского района».
           </p>
+          
           <p className="my-4">
             <b>Сокращенное наименование предприятия:</b>Государственное
             предприятие «Служба заказчика жилищно-коммунальных услуг
