@@ -1,4 +1,4 @@
-import Layout from "../layout/Layout";
+
 import s from './css.module.css'
 export default function HomeRenovation() {
   return (
