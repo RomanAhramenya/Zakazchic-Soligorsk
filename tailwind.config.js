@@ -6,7 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+      blur:{
+        sm:'2px'
+      }
     },
   },
   plugins: [],
