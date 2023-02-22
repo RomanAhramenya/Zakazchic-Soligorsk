@@ -36,12 +36,12 @@ export default function Layout({ children, tittle }) {
                   />
                  </div> 
                   <h1
-                    className=" px-2 text-red-900 lg:text-4xl md:text-2xl tracking-wide "
+                    className=" px-2 text-blue-900 lg:text-4xl md:text-2xl tracking-wide "
                     style={{ fontFamily: "SegoeUiBlack,sans-serif",textShadow:"0 0 10px black"  }}
                   >
                     <div>СЛУЖБА ЗАКАЗЧИКА</div>
                     <div>ЖИЛИЩНО-КОММУНАЛЬНЫХ УСЛУГ</div>
-                    <div className="text-green-900">СОЛИГОРСКОГО РАЙОНА</div>
+                    <div >СОЛИГОРСКОГО РАЙОНА</div>
                   </h1>
                 </div>
               

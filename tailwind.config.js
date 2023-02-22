@@ -9,6 +9,7 @@ module.exports = {
       blur:{
         sm:'2px'
       }
+      
     },
   },
   plugins: [],

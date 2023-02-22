@@ -306,14 +306,16 @@ export default function AboutUs() {
           жилищно-коммунальных услуг Солигорского района»
         </h1>
         <table className="border-collapse mx-auto ">
-        <thead></thead>
-        <tbody> <tr>
-            <th className="border md:p-4">Емельянчикова Оксана Николаевна</th>
-            <th className="border md:p-4">Директор</th>
-            <th className="border md:p-4">каждый вторник с 9.00 до 11.00</th>
-          </tr></tbody>
-        <tfoot></tfoot>
-         
+          <thead></thead>
+          <tbody>
+          
+            <tr>
+              <th className="border md:p-4">Емельянчикова Оксана Николаевна</th>
+              <th className="border md:p-4">Директор</th>
+              <th className="border md:p-4">каждый вторник с 9.00 до 11.00</th>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
         </table>
         <h1
           style={{ color: "rgb(56 189 248)" }}
@@ -322,15 +324,15 @@ export default function AboutUs() {
           в отсутствии директора
         </h1>
         <table className="border-collapse mx-auto ">
-        <thead></thead>
-        <tbody>
-           <tr>
-            <th className="border md:p-4">Гидлевский Сергей Николаевич</th>
-            <th className="border md:p-4">Главный инженер</th>
-            <th className="border md:p-4">каждый вторник с 9.00 до 11.00</th>
-          </tr>
-        </tbody>
-         <tfoot></tfoot>
+          <thead></thead>
+          <tbody>
+            <tr>
+              <th className="border md:p-4">Гидлевский Сергей Николаевич</th>
+              <th className="border md:p-4">Главный инженер</th>
+              <th className="border md:p-4">каждый вторник с 9.00 до 11.00</th>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
         </table>
         <h1
           style={{ color: "rgb(56 189 248)" }}
@@ -347,24 +349,25 @@ export default function AboutUs() {
           услуг Солигорского района»
         </h1>
         <table className="border-collapse mx-auto ">
-        <thead></thead>
-        <tbody> <tr>
-            <th className="border md:p-4">Емельянчикова Оксана Николаевна</th>
-            <th className="border md:p-4">Директор</th>
-            <th className="border md:p-4">+375174 24-37-76</th>
-          </tr>
-          <tr>
-            <th className="border md:p-4">Жданова Елена Георгиевна</th>
-            <th className="border md:p-4">Заместитель директора</th>
-            <th className="border md:p-4">+375174 24-37-74</th>
-          </tr>
-          <tr>
-            <th className="border md:p-4">Гидлевский Сергей Николаевич</th>
-            <th className="border md:p-4">Главный инженер</th>
-            <th className="border md:p-4">+375174 24-37-76</th>
-          </tr></tbody>
-        <tfoot></tfoot>
-         
+          <thead></thead>
+          <tbody>
+            <tr>
+              <th className="border md:p-4">Емельянчикова Оксана Николаевна</th>
+              <th className="border md:p-4">Директор</th>
+              <th className="border md:p-4">+375174 24-37-76</th>
+            </tr>
+            <tr>
+              <th className="border md:p-4">Жданова Елена Георгиевна</th>
+              <th className="border md:p-4">Заместитель директора</th>
+              <th className="border md:p-4">+375174 24-37-74</th>
+            </tr>
+            <tr>
+              <th className="border md:p-4">Гидлевский Сергей Николаевич</th>
+              <th className="border md:p-4">Главный инженер</th>
+              <th className="border md:p-4">+375174 24-37-76</th>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
         </table>
       </div>
     </div>
